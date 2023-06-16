@@ -84,7 +84,7 @@ export class BashExecFunction extends Construct {
       environment: {
         LAMBDA_FUNCTION_ARN: this.handler.functionArn,
       },
-      timeout: props.timeout ?? Duration.seconds(60),
+      timeout: Duration.minutes(5),
     });
     const myProvider = new cr.Provider(this, 'MyProvider', {
       onEventHandler: onEvent,
