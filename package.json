@@ -27,8 +27,7 @@
     "upgrade": "npx projen upgrade",
     "watch": "npx projen watch",
     "projen": "npx projen",
-    "xbuild": "tsc",
-    "prepack": "npm run xbuild"
+    "prepack": "npx projen build"
   },
   "author": {
     "name": "Pahud Hsieh",
