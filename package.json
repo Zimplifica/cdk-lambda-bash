@@ -27,7 +27,7 @@
     "upgrade": "npx projen upgrade",
     "watch": "npx projen watch",
     "projen": "npx projen",
-    "postinstall": "npx projen tsc --outDir ./build"
+    "postinstall": "npm run tsc --outDir ./build"
   },
   "author": {
     "name": "Pahud Hsieh",
