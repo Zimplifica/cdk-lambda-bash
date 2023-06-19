@@ -27,7 +27,7 @@
     "upgrade": "npx projen upgrade",
     "watch": "npx projen watch",
     "projen": "npx projen",
-    "prepare": "npx projen prepare:task"
+    "prepare": "npx projen build"
   },
   "author": {
     "name": "Pahud Hsieh",
