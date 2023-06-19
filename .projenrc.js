@@ -81,6 +81,12 @@ gitpod.addVscodeExtensions(
   'AmazonWebServices.aws-toolkit-vscode',
 );
 
+const prepackTask = project.addTask('prepare:task', {
+  description: 'Prebuild setup for Gitpod',
+});
+// run task
+prepackTask.exec('yarn tsc');
+
 
 const common_exclude = ['cdk.out', 'cdk.context.json', 'images', 'yarn-error.log', 'dependabot.yml'];
 project.npmignore.exclude(...common_exclude);
